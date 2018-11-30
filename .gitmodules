@@ -37,3 +37,6 @@
 [submodule "fasta"]
 	path = modules/davep-fasta
 	url = git@github.com:davep/fasta.el
+[submodule "julia-mode"]
+	path = modules/julia-mode
+	url = git@github.com:JuliaEditorSupport/julia-emacs.git

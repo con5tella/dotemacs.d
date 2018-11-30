@@ -1,8 +1,10 @@
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/modules/ess/lisp"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/modules/julia-mode"))
 
 ;; (require 'ess)
 (require 'ess-site)
+(require 'julia-mode)
 
 (add-to-list 'auto-mode-alist '("\\.R\\'" . ess-r-mode))
 (add-to-list 'auto-mode-alist '("\\.[Rr]history\\'" . ess-r-mode))
