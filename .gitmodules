@@ -1,0 +1,36 @@
+[submodule "lazycat-awesome-tab"]
+	path = modules/lazycat-awesome-tab
+	url = git@github.com:manateelazycat/awesome-tab.git
+[submodule "lazycat-color-rg"]
+	path = modules/lazycat-color-rg
+	url = git@github.com:manateelazycat/color-rg.git
+[submodule "lazycat-company-english-helper"]
+	path = modules/lazycat-company-english-helper
+	url = git@github.com:manateelazycat/company-english-helper.git
+[submodule "ess"]
+	path = modules/ess
+	url = git@github.com:emacs-ess/ESS.git
+[submodule "poly-R"]
+	path = modules/poly-R
+	url = git@github.com:polymode/poly-R.git
+[submodule "lazycat-insert-translated-name"]
+	path = modules/lazycat-insert-translated-name
+	url = git@github.com:manateelazycat/insert-translated-name.git
+[submodule "poly-markdown"]
+	path = modules/poly-markdown
+	url = git@github.com:polymode/poly-markdown.git
+[submodule "poly-noweb"]
+	path = modules/poly-noweb
+	url = git@github.com:polymode/poly-noweb.git
+[submodule "polymode"]
+	path = modules/polymode
+	url = git@github.com:polymode/polymode.git
+[submodule "rainbow-mode"]
+	path = modules/rainbow-mode
+	url = git@github.com:emacsmirror/rainbow-mode.git
+[submodule "symbol-overlay"]
+	path = modules/wolray-symbol-overlay
+	url = git@github.com:wolray/symbol-overlay.git
+[submodule "visual-regexp"]
+	path = modules/benma-visual-regexp
+	url = git@github.com:benma/visual-regexp.el.git
