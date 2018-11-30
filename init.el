@@ -63,7 +63,7 @@
 ;; improve parentheses editing for elisp
 (require 'init-paredit)
 
-(require 'fasta)
+(require 'init-fasta)
 
 ;; English editing
 (require 'init-company-english-helper)

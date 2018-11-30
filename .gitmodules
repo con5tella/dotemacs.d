@@ -34,3 +34,6 @@
 [submodule "visual-regexp"]
 	path = modules/benma-visual-regexp
 	url = git@github.com:benma/visual-regexp.el.git
+[submodule "fasta"]
+	path = modules/davep-fasta
+	url = git@github.com:davep/fasta.el
