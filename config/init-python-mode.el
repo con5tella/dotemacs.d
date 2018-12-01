@@ -27,7 +27,7 @@
    (format "%s %s" python-shell-interpreter
            (buffer-file-name (current-buffer)))))
 
-(defun Hesperus-py-send-line()
+(defun Hesperus-py-send-line ()
   "将当前行发送到 python shell.
 发送前会对删除前后空格，主要使用场景是将 doctest 代码发送到 shell 进行测试。"
   (interactive)
@@ -35,6 +35,10 @@
 
 ;; (eval-after-load "company"
 ;;   '(add-to-list 'company-backends 'anaconda-mode))
+
+(defun Hesperus-py-operator-comma ()
+  (interactive)
+  (insert ", "))
 
 (add-hook 'python-mode-hook
           (lambda ()
@@ -44,7 +48,8 @@
             (set-variable 'python-indent-guess-indent-offset nil)
             ;; submit current buffer
             (local-set-key (kbd "<f5>") 'Hesperus-py-run)
-            (local-set-key (kbd "C-x C-e") 'Hesperus-py-send-line)))
+            (local-set-key (kbd "C-x C-e") 'Hesperus-py-send-line)
+            (local-set-key (kbd ",") #'Hesperus-py-operator-comma)))
 ;; (with-eval-after-load 'flycheck
 ;;   (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
 
