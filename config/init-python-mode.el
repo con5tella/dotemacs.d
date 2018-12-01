@@ -2,10 +2,6 @@
 ;; set anaconda's ipython as default python interpreter
 (setq python-shell-interpreter "/opt/anaconda/bin/ipython")
 
-;; tab-width
-(setq tab-width 4)
-(set-variable 'python-indent-offset 4)
-(set-variable 'python-indent-guess-indent-offset nil)
 
 ;; run IPython interpreter
 (defun Hesperus-ipython ()
@@ -22,7 +18,7 @@
 ;; (use-package company-anaconda :ensure t)
 
 (add-hook 'python-mode-hook 'company-mode)
-;; (add-hook 'python-mode-hook #'hs-minor-mode)
+(add-hook 'python-mode-hook #'hs-minor-mode)
 
 (defun Hesperus-py-run ()
   "Run .py file."
@@ -42,6 +38,10 @@
 
 (add-hook 'python-mode-hook
           (lambda ()
+            ;; tab-width and indent
+            (setq tab-width 4)
+            (set-variable 'python-indent-offset 4)
+            (set-variable 'python-indent-guess-indent-offset nil)
             ;; submit current buffer
             (local-set-key (kbd "<f5>") 'Hesperus-py-run)
             (local-set-key (kbd "C-x C-e") 'Hesperus-py-send-line)))
