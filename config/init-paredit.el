@@ -32,7 +32,6 @@
                'lua-mode-hook
                'swift-mode-hook
                'minibuffer-inactive-mode-hook
-               'ess-mode-hook
                ))
   (add-hook hook '(lambda () (paredit-mode 1))))
 

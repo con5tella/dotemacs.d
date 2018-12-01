@@ -6,12 +6,12 @@
 (require 'ess-site)
 (require 'julia-mode)
 
-(add-to-list 'auto-mode-alist '("\\.R\\'" . ess-r-mode))
-(add-to-list 'auto-mode-alist '("\\.[Rr]history\\'" . ess-r-mode))
-(add-to-list 'auto-mode-alist '("\\.[Rr]profile\\'" . ess-r-mode))
-(add-to-list 'auto-mode-alist '("\\.[Ss][Aa][Ss]\\'" . SAS-mode))
 
-(add-to-list 'auto-mode-alist '("dotR[(profile)|(environ)]" . ess-r-mode))
+(add-to-list 'auto-mode-alist '("dot[Rr][(environ)(history)(profile)]" . ess-r-mode))
+
+
+(add-hook 'ess-r-mode 'hs-minor-mode)
+(add-hook 'ess-r-mode 'rainbow-delimiters-mode)
 
 
 (bind-key* "C-c r" #'run-ess-r)
