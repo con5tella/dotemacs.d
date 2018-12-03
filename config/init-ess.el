@@ -10,6 +10,7 @@
 (add-to-list 'auto-mode-alist '("dot[Rr][(environ)(history)(profile)]" . ess-r-mode))
 
 
+(add-hook 'ess-r-mode 'company-mode)
 (add-hook 'ess-r-mode 'hs-minor-mode)
 (add-hook 'ess-r-mode 'rainbow-delimiters-mode)
 

@@ -87,10 +87,11 @@
 
 ;; similar with the function of "o" in Vim
 ;; start newline whether in brackets or not
-(bind-key* "C-<return>" (lambda ()
-                          (interactive)
-                          (end-of-visual-line)
-                          (newline-and-indent)))
+(unless 'org-mode
+  (bind-key* "C-<return>" (lambda ()
+                            (interactive)
+                            (end-of-visual-line)
+                            (newline-and-indent))))
 
 
 ;; search and replace with Swiper and Replace-regexp
