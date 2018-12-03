@@ -18,6 +18,20 @@
   (current-buffer))
 (bind-key* "s-d" #'Hesperus-open-dotemacs)
 
+;; begin a new line even if the cursor in line
+(defun Hesperus-open-newline-inline ()
+  (interactive)
+  (end-of-visual-line)
+  (newline-and-indent))
+(dolist (HA-newline-inline-hook
+         (list
+          'markdown-mode-hook
+          'prog-mode-hook))
+  (add-hook HA-newline-inline-hook
+            (lambda ()
+              (local-set-key (kbd "C-<return>")
+                             #'Hesperus-open-newline-inline))))
+
 
 ;; switch diff Modes
 (bind-keys*
@@ -84,15 +98,6 @@
 
 
 ;; keybindings with prefix Control key
-
-;; similar with the function of "o" in Vim
-;; start newline whether in brackets or not
-(unless 'org-mode
-  (bind-key* "C-<return>" (lambda ()
-                            (interactive)
-                            (end-of-visual-line)
-                            (newline-and-indent))))
-
 
 ;; search and replace with Swiper and Replace-regexp
 (bind-key* "C-S-r" 'query-replace-regexp)
