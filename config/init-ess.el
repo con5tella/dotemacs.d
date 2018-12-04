@@ -8,6 +8,7 @@
 
 
 (add-to-list 'auto-mode-alist '("dot[Rr][(environ)(history)(profile)]" . ess-r-mode))
+;; (add-to-list 'auto-mode-alist '("\\.Rd" . Rnw-mode))
 
 
 (add-hook 'ess-r-mode 'company-mode)
