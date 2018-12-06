@@ -16,7 +16,7 @@
 (defconst user-emacs-directory
   (file-name-directory
    (file-chase-links
-    (expand-file-name "~/emacsdirs/syl20bnr-spacemacs/")
+    (expand-file-name "~/.emacs.d/modules/syl20bnr-spacemacs/")
     ;; (expand-file-name "~/emacsdirs/centaur-emacs/")
     ;; (expand-file-name "~/emacsdirs/purcell-emacs/")
     ;; (expand-file-name "~/emacsdirs/prelude-emacs/")

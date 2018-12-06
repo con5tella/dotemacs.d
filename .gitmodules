@@ -40,3 +40,6 @@
 [submodule "julia-mode"]
 	path = modules/julia-mode
 	url = git@github.com:JuliaEditorSupport/julia-emacs.git
+[submodule "spacemacs"]
+	path = modules/syl20bnr-spacemacs
+	url = git@github.com:syl20bnr/spacemacs.git
